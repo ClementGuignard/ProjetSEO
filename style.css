@@ -39,11 +39,6 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -95,12 +90,8 @@ a:hover {
     background-size: 280px 280px;
 }
 
-.b-parallax {
-    background-attachment: fixed;
-}
-
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: white;
 }
 
 .d-bloc button:hover {
@@ -112,11 +103,11 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
+    border-color: white;
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: white;
 }
 
 .d-bloc .a-btn,
@@ -133,7 +124,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: white;
 }
 
 .d-bloc .a-btn:hover,
@@ -286,6 +277,9 @@ a:hover {
 #bloc-1-hero h1 {
     font-size: 32px;
 }
+#bloc-0{
+    width: 95%;
+}
 
 .navbar {
     margin-bottom: 0;
@@ -326,6 +320,7 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    margin-right: 20px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -651,7 +646,6 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
 }
 
 .container {
@@ -713,7 +707,6 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
 }
 
 .med-width-whitespace {
@@ -723,11 +716,11 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: white!important;
 }
 
 h4 {
-    color: #333333!important;
+    color: white!important;
 }
 
 .icons {
@@ -736,7 +729,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: white!important;
+    font-size: 20px;
 }
 
 .portfolio-thumb {
@@ -771,20 +765,21 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: red;
+    background-color: gray;
 }
 
 .tc-white {
     color: white!important;
+    position: relative;
+    font-size: 20px;
 }
 
 .btn-atomic-tangerine {
-    background: grey;
+    background: blue!important;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: grey!important;
     color: #FFFFFF!important;
 }
 
@@ -847,25 +842,9 @@ h4 {
         max-width: 100%
     }
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
 @media (max-width: 991px) {
     .container {
         width: 100%;
-    }
-    .b-parallax {
-        background-attachment: scroll;
     }
     .page-container,
     #hero-bloc {

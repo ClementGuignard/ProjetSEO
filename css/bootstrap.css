@@ -1659,6 +1659,7 @@ mark {
 
 .text-center {
     text-align: center
+    
 }
 
 .text-justify {
@@ -4838,7 +4839,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .nav>li {
     position: relative;
-    display: block
+    display: block;
+    margin-right: 5px;
 }
 
 .nav>li>a {

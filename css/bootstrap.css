@@ -1658,9 +1658,7 @@ mark {
 }
 
 .text-center {
-    text-align: center;
-    font-size: 20px
-    
+    text-align: center
 }
 
 .text-justify {
@@ -4288,7 +4286,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid;
+    border-top: 4px solid\9;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4375,6 +4373,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
 }
 
 .open>.dropdown-menu {
@@ -4839,8 +4838,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .nav>li {
     position: relative;
-    display: block;
-    margin-right: 5px;
+    display: block
 }
 
 .nav>li>a {
@@ -5124,6 +5122,13 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
     max-height: 340px
+}
+
+@media (max-device-width:480px) and (orientation:landscape) {
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 200px
+    }
 }
 
 .container-fluid>.navbar-collapse,
